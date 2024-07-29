@@ -8,6 +8,7 @@ import Experience from "./view/experience/Experience";
 import { useState } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { lightTheme, darkTheme } from "./assets/theme/Theme";
+import Transition from "./view/transition/Transition";
 
 const App = () => {
   const [themeMode, setThemeMode] = useState("light");
@@ -20,11 +21,12 @@ const App = () => {
     <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>
       <CssBaseline />
       <Hero themeMode={themeMode} toggleTheme={toggleTheme} />
-      <About />
-      <Experience />
-      {/* <Navbar themeMode={themeMode} toggleTheme={toggleTheme} /> */}
-      {/* <Home />
-      <About /> */}
+      <Transition>
+        <About />
+      </Transition>
+      <Transition>
+        <Experience />
+      </Transition>
     </ThemeProvider>
   );
 };

@@ -15,14 +15,16 @@ const useStyles = makeStyles((theme) => ({
 
 const Transition = ({ children }) => {
   const classes = useStyles();
-  const [inViewRef, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [inViewRef, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
   const [fadeClass, setFadeClass] = useState(classes.fadeOut);
 
   useEffect(() => {
     if (inView) {
       setFadeClass(classes.fadeIn);
+    } else {
+      setFadeClass(classes.fadeOut);
     }
-  }, [inView, classes.fadeIn]);
+  }, [inView, classes.fadeIn, classes.fadeOut]);
 
   return (
     <div ref={inViewRef} className={fadeClass}>

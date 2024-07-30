@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Box, Button, Container, IconButton, Stack, Typography, Tooltip } from "@mui/material";
+import { Box, Button, Container, IconButton, Stack, Typography, Tooltip, FormLabel } from "@mui/material";
 import { GitHub, LinkedIn, LightMode, DarkMode, FileDownload } from "@mui/icons-material";
 
 import Logo from "../../assets/image/logo-rounded.png";
@@ -52,29 +52,35 @@ const Hero = ({ themeMode, toggleTheme }) => {
           />
         </Typography>
         <Stack direction="row" justifyContent="center" alignItems="center" py={1}>
-          <IconButton href="https://github.com/ranggaydtm" target="_blank">
-            <GitHub />
-          </IconButton>
-          <IconButton href="https://www.linkedin.com/in/ranggaydtm/" target="_blank">
-            <LinkedIn />
-          </IconButton>
+          <FormLabel title="Github">
+            <IconButton href="https://github.com/ranggaydtm" target="_blank" rel="noopener noreferrer">
+              <GitHub />
+            </IconButton>
+          </FormLabel>
+          <FormLabel title="LinkedIn">
+            <IconButton href="https://www.linkedin.com/in/ranggaydtm/" target="_blank" rel="noopener noreferrer">
+              <LinkedIn />
+            </IconButton>
+          </FormLabel>
         </Stack>
-        <Button
-          variant="contained"
-          endIcon={<FileDownload fontSize="small" />}
-          sx={{
-            borderRadius: "20px",
-            color: "black",
-            backgroundColor: "#f2f2f2",
-            transition: "transform 200ms ease-in-out",
-            "&:hover": {
-              transform: "scale(1.05)",
+        <FormLabel title="Download Resume">
+          <Button
+            variant="contained"
+            endIcon={<FileDownload fontSize="small" />}
+            sx={{
+              borderRadius: "20px",
+              color: "black",
               backgroundColor: "#f2f2f2",
-            },
-          }}
-        >
-          Resume
-        </Button>
+              transition: "transform 200ms ease-in-out",
+              "&:hover": {
+                transform: "scale(1.05)",
+                backgroundColor: "#f2f2f2",
+              },
+            }}
+          >
+            Resume
+          </Button>
+        </FormLabel>
       </Box>
     </Container>
   );

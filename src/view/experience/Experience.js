@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { Box, Card, CardContent, Chip, Grid, Paper, Stack, Typography } from "@mui/material";
-import { PaperStyle, StackStyle, TechStyle } from "../../assets/theme/Style";
+import { Box, Chip, Paper, Stack, Typography } from "@mui/material";
+import { ChipStyle, PaperStyle, StackStyle, TechStyle } from "../../assets/theme/Style";
 
 const Experience = () => {
   return (
@@ -21,14 +21,14 @@ const Experience = () => {
             Administrasi and E-Tugas Belajar projects.
           </Typography>
           <Stack direction="row" justifyContent="center" alignItems="center" sx={TechStyle}>
-            <Chip variant="filled" size="small" clickable label="Javascript" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Typescript" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="ReactJS" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Redux" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Material-UI" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Postman" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Github Action (CI/CD)" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Agile / Scrum" sx={{ fontSize: "12px" }} />
+            <Chip variant="filled" size="small" clickable label="Javascript" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Typescript" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="ReactJS" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Redux" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Material-UI" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Postman" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Github Action (CI/CD)" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Agile / Scrum" sx={ChipStyle} />
           </Stack>
         </Stack>
       </Paper>
@@ -45,13 +45,13 @@ const Experience = () => {
             E-administration services and E-Study Tasks projects.
           </Typography>
           <Stack direction="row" justifyContent="center" alignItems="center" sx={TechStyle}>
-            <Chip variant="filled" size="small" clickable label="ReactJS" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Redux" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="VueJS" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Tailwind CSS" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Git" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Postman" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Agile / Scrum" sx={{ fontSize: "12px" }} />
+            <Chip variant="filled" size="small" clickable label="ReactJS" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Redux" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="VueJS" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Tailwind CSS" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Git" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Postman" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Agile / Scrum" sx={ChipStyle} />
           </Stack>
         </Stack>
       </Paper>
@@ -68,12 +68,12 @@ const Experience = () => {
             E-administration services and E-Study Tasks projects.
           </Typography>
           <Stack direction="row" justifyContent="center" alignItems="center" sx={TechStyle}>
-            <Chip variant="filled" size="small" clickable label="PHP" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Laravel" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="HTML" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="CSS" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="Balsamiq" sx={{ fontSize: "12px" }} />
-            <Chip variant="filled" size="small" clickable label="JSON" sx={{ fontSize: "12px" }} />
+            <Chip variant="filled" size="small" clickable label="PHP" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Laravel" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="HTML" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="CSS" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="Balsamiq" sx={ChipStyle} />
+            <Chip variant="filled" size="small" clickable label="JSON" sx={ChipStyle} />
           </Stack>
         </Stack>
       </Paper>

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Instagram, MailOutline, X } from "@mui/icons-material";
 import { Container, FormLabel, IconButton, Paper, Stack, Typography } from "@mui/material";
+import { ContainerContact, PaperContact } from "../../assets/theme/Style";
 
 const Contact = () => {
   // Attach email on Gmail
@@ -12,28 +13,8 @@ const Contact = () => {
       <Typography pt={5} textAlign="center" fontSize="28px" fontWeight={800} fontFamily="-moz-initial">
         CONTACT
       </Typography>
-      <Container
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: { md: "center" },
-          gap: 4,
-          pt: 2,
-          pb: 5,
-          textAlign: "center",
-        }}
-      >
-        <Paper
-          elevation={3}
-          sx={{
-            width: { xs: "100%", md: "50%" },
-            borderRadius: "20px",
-            transition: "transform 200ms ease-in-out",
-            "&:hover": {
-              transform: "scale(1.05)",
-            },
-          }}
-        >
+      <Container sx={ContainerContact}>
+        <Paper elevation={3} sx={PaperContact}>
           <Stack direction="column" spacing={1} sx={{ backgroundColor: "", padding: 2 }}>
             <Typography fontSize="20px" fontWeight={700} variant="caption">
               Get in Touch

@@ -1,20 +1,30 @@
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { makeStyles } from "@mui/styles";
+import { css } from "@emotion/react";
 
-const useStyles = makeStyles((theme) => ({
-  fadeIn: {
-    opacity: 1,
-    transition: "opacity 1s ease-in",
-  },
-  fadeOut: {
-    opacity: 0,
-    transition: "opacity 1s ease-out",
-  },
-}));
+const fadeIn = css`
+  opacity: 1;
+  transition: opacity 1s ease-in;
+`;
+
+const fadeOut = css`
+  opacity: 0;
+  transition: opacity 1s ease-out;
+`;
+
+// const useStyles = makeStyles((theme) => ({
+//   fadeIn: {
+//     opacity: 1,
+//     transition: "opacity 1s ease-in",
+//   },
+//   fadeOut: {
+//     opacity: 0,
+//     transition: "opacity 1s ease-out",
+//   },
+// }));
 
 const Transition = ({ children }) => {
-  const classes = useStyles();
+  // const classes = useStyles();
   const [inViewRef, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
   const [isVisible, setIsVisible] = useState(false);
 
@@ -36,7 +46,7 @@ const Transition = ({ children }) => {
   // }, [inView, classes.fadeIn, classes.fadeOut]);
 
   return (
-    <div ref={inViewRef} className={isVisible ? classes.fadeIn : classes.fadeOut}>
+    <div ref={inViewRef} className={isVisible ? fadeIn : fadeOut}>
       {children}
     </div>
   );

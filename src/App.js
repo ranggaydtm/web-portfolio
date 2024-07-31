@@ -6,7 +6,7 @@ import About from "./view/about/About";
 import Experience from "./view/experience/Experience";
 import Contact from "./view/contact/Contact";
 import Footer from "./components/footer/Footer";
-import Transition from "./view/transition/Transition";
+// import Transition from "./view/transition/Transition";
 
 import { useState } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -23,15 +23,9 @@ const App = () => {
     <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>
       <CssBaseline />
       <Hero themeMode={themeMode} toggleTheme={toggleTheme} />
-      <Transition>
-        <About />
-      </Transition>
-      <Transition>
-        <Experience />
-      </Transition>
-      <Transition>
-        <Contact />
-      </Transition>
+      <About />
+      <Experience />
+      <Contact />
       <Footer />
     </ThemeProvider>
   );

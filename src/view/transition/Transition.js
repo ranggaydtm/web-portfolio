@@ -16,18 +16,27 @@ const useStyles = makeStyles((theme) => ({
 const Transition = ({ children }) => {
   const classes = useStyles();
   const [inViewRef, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
-  const [fadeClass, setFadeClass] = useState(classes.fadeOut);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     if (inView) {
-      setFadeClass(classes.fadeIn);
+      setIsVisible(true);
     } else {
-      setFadeClass(classes.fadeOut);
+      setIsVisible(false);
     }
-  }, [inView, classes.fadeIn, classes.fadeOut]);
+  }, [inView]);
+
+  // const [fadeClass, setFadeClass] = useState(classes.fadeOut);
+  // useEffect(() => {
+  //   if (inView) {
+  //     setFadeClass(classes.fadeIn);
+  //   } else {
+  //     setFadeClass(classes.fadeOut);
+  //   }
+  // }, [inView, classes.fadeIn, classes.fadeOut]);
 
   return (
-    <div ref={inViewRef} className={fadeClass}>
+    <div ref={inViewRef} className={isVisible ? classes.fadeIn : classes.fadeOut}>
       {children}
     </div>
   );

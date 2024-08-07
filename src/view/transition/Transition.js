@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { css } from "@emotion/react";
+import styled from "styled-components";
 
-const fadeIn = css`
+const fadeIn = styled.div`
   opacity: 1;
   transition: opacity 1s ease-in;
 `;
 
-const fadeOut = css`
+const fadeOut = styled.div`
   opacity: 0;
   transition: opacity 1s ease-out;
 `;

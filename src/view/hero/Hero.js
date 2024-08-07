@@ -5,6 +5,7 @@ import { ButtonResume, ContainerHero } from "../../assets/theme/Style";
 
 import Logo from "../../assets/image/logo-rounded.png";
 import TypewriterComponent from "typewriter-effect";
+import Resume from "../../assets/file/resume.pdf";
 
 const Hero = ({ themeMode, toggleTheme }) => {
   return (
@@ -51,9 +52,11 @@ const Hero = ({ themeMode, toggleTheme }) => {
           </FormLabel>
         </Stack>
         <FormLabel title="Download Resume">
-          <Button variant="contained" endIcon={<FileDownload fontSize="small" />} sx={ButtonResume}>
-            Resume
-          </Button>
+          <a href={Resume} download>
+            <Button variant="contained" endIcon={<FileDownload fontSize="small" />} sx={ButtonResume}>
+              Resume
+            </Button>
+          </a>
         </FormLabel>
       </Box>
     </Container>

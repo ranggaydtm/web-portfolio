@@ -17,8 +17,12 @@ const Experience = () => {
             August 2023 - Present
           </Typography>
           <Typography textAlign="center" variant="caption" fontSize="13px">
-            I contributed to the Ministry of Foreign Affairs of the Republic of Indonesia project. I developed and fixed bugs in the Payroll Management System project. Furthermore, I created E-Layanan
-            Administrasi and E-Tugas Belajar projects.
+            I've developed and maintained web applications using React JS with Redux in government-scaled web applications, ensuring robust state management and seamless user interactions. I
+            implemented UI/UX designs into the web interface, translating design specifications into functional and visually appealing components. To enhance the user experience, I customized the
+            display using Material-UI, creating a consistent and modern look across the application. Additionally, I developed CI/CD pipelines with GitHub Actions to streamline the deployment process,
+            ensuring rapid and reliable releases. My work also involved debugging and enhancing application performance, optimizing code and resolving issues to deliver a smooth user experience.
+            {/* I contributed to the Ministry of Foreign Affairs of the Republic of Indonesia project. I
+            developed and fixed bugs in the Payroll Management System project. In addition, I created E-administration services and E-Study Tasks projects. */}
           </Typography>
           <Stack direction="row" justifyContent="center" alignItems="center" sx={TechStyle}>
             <Chip variant="filled" size="small" clickable label="Javascript" sx={ChipStyle} />
@@ -41,8 +45,9 @@ const Experience = () => {
             June 2022 - September 2022
           </Typography>
           <Typography textAlign="center" variant="caption" fontSize="13px">
-            I contributed to the Ministry of Foreign Affairs of the Republic of Indonesia project. I developed and fixed bugs in the Payroll Management System project. In addition, I created
-            E-administration services and E-Study Tasks projects.
+            I've developed a Real Estate Management website project using both React JS and Vue JS, leveraging the strengths of each framework to create a dynamic and responsive application. I
+            implemented UI/UX designs into the web interface, ensuring an intuitive and user-friendly experience. To achieve a polished and unique look, I customized the display using Tailwind CSS,
+            allowing for rapid and flexible styling. Additionally, I focused on debugging and enhancing application performance, ensuring the site runs smoothly and efficiently for all users.
           </Typography>
           <Stack direction="row" justifyContent="center" alignItems="center" sx={TechStyle}>
             <Chip variant="filled" size="small" clickable label="ReactJS" sx={ChipStyle} />
@@ -64,8 +69,9 @@ const Experience = () => {
             September 2021 - December 2021
           </Typography>
           <Typography textAlign="center" variant="caption" fontSize="13px">
-            I contributed to the Ministry of Foreign Affairs of the Republic of Indonesia project. I developed and fixed bugs in the Payroll Management System project. In addition, I created
-            E-administration services and E-Study Tasks projects.
+            I created a mock-up dashboard application chatbot design using Balsamiq, laying the groundwork for a user-friendly interface. I then developed the dashboard application with PHP, utilizing
+            the Laravel framework and Argon Dashboard Template to ensure a robust and visually appealing end product. Additionally, I created graphic designs and illustrations for marketing and
+            promotion purposes, enhancing the visual appeal and effectiveness of promotional materials.
           </Typography>
           <Stack direction="row" justifyContent="center" alignItems="center" sx={TechStyle}>
             <Chip variant="filled" size="small" clickable label="PHP" sx={ChipStyle} />

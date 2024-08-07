@@ -12,9 +12,12 @@ const About = () => {
           ABOUT
         </Typography>
         <Typography variant="caption" fontSize="14px">
-          Graduated of Informatics Engineering from Widyatama University. I'm a passionate Frontend Web Developer with 1 year experience in building visually appealing and highly functional web
+          a Frontend Developer with a Bachelor's degree in Informatics Engineering from Widyatama University. Over one year of professional experience in frontend development, proficient in HTML, CSS,
+          JavaScript, and Node.js. Adept at using modern frameworks and libraries such as React.js, Vue.js, and TypeScript to build dynamic and responsive web applications. Proven ability to deliver
+          high-quality, user-friendly, and performant web solutions. Constantly seeking opportunities for learning and growth.
+          {/* Graduated of Informatics Engineering from Widyatama University. I'm a passionate Frontend Web Developer with 1 year experience in building visually appealing and highly functional web
           applications. My expertise lies in HTML, CSS and JavaScript, along with hands-on experience in experience in modern frameworks like React, Typescript and Vue. I thrive on turning complex
-          problems into simple, and intuitive interfaces.
+          problems into simple, and intuitive interfaces. */}
         </Typography>
       </Paper>
     </Box>

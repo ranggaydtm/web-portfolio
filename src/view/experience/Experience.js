@@ -42,7 +42,7 @@ const Experience = () => {
             Frontend Developer - BAS-IT Studio
           </Typography>
           <Typography textAlign="center" fontSize="14px">
-            June 2022 - September 2022
+            June 2022 - July 2023
           </Typography>
           <Typography textAlign="center" variant="caption" fontSize="13px">
             I've developed a Real Estate Management website project using both React JS and Vue JS, leveraging the strengths of each framework to create a dynamic and responsive application. I
